@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 8.1.1 – Andre Cebrian</title>
+  <style>
+
+    body {
+      background: #0f0f0f;
+      font-family: 'Space Mono', monospace;
+      min-height: 100vh;
+      padding: 40px 20px;
+      color: #fff;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 1.1rem;
+      letter-spacing: 0.15em;
+      color: #888;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+      transition: outline 0.2s;
+    }
+
+    .card:hover { outline: 2px solid rgba(255,255,255,0.3); }
+
+    .label {
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      text-align: center;
+      line-height: 1.6;
+      padding: 8px 12px;
+    }
+
+    .tag {
+      position: absolute;
+      top: 6px;
+      left: 10px;
+      font-size: 0.55rem;
+      color: rgba(255,255,255,0.4);
+      letter-spacing: 0.08em;
+    }
+
+    /* DIV 1: 30vw × 20vh */
+    .div1 {
+      width: 30vw;
+      height: 20vh;
+      background: linear-gradient(135deg, #1a3a5c, #0d6efd44);
+      border: 1px solid #0d6efd66;
+    }
+    .div1 .label { color: #6ea8fe; }
+
+    /* DIV 2: 30vh × 20vw */
+    .div2 {
+      width: 30vh;
+      height: 20vw;
+      background: linear-gradient(135deg, #3a1a5c, #8b0df444);
+      border: 1px solid #8b0df466;
+    }
+    .div2 .label { color: #c29eff; }
+
+    /* DIV 3: 30vmax × 20vmin */
+    .div3 {
+      width: 30vmax;
+      height: 20vmin;
+      background: linear-gradient(135deg, #1a4a2a, #12b76a44);
+      border: 1px solid #12b76a66;
+    }
+    .div3 .label { color: #6ee7b7; }
+
+    /* DIV 4: 30vmax × 200px */
+    .div4 {
+      width: 30vmax;
+      height: 200px;
+      background: linear-gradient(135deg, #4a2a1a, #f97316 44);
+      border: 1px solid #f9731666;
+    }
+    .div4 .label { color: #fdba74; }
+
+    .info-bar {
+      text-align: center;
+      font-size: 0.6rem;
+      color: #444;
+      margin-top: 20px;
+      letter-spacing: 0.1em;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Ejercicio 8.1.1 — Andre Cebrian </h1>
+
+  <div class="container">
+
+    <div class="card div1">
+      <span class="tag">DIV 1</span>
+      <p class="label">
+        CALL OF DUTY
+      </p>
+    </div>
+
+    <div class="card div2">
+      <span class="tag">DIV 2</span>
+      <p class="label">
+        BATTLEFIELD 
+      </p>
+    </div>
+
+    <div class="card div3">
+      <span class="tag">DIV 3</span>
+      <p class="label">
+        COUNTER-STRIKE 2
+      </p>
+    </div>
+
+    <div class="card div4">
+      <span class="tag">DIV 4</span>
+      <p class="label">
+        SALIÓ HOY UNA NUEVA CAJA DEL COUNTER!!
+      </p>
+    </div>
+
+  </div>
+
+  <p class="info-bar">Andre Cebrian - 12/3/26</p>
+
+</body>
+</html>

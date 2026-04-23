@@ -1,0 +1,41 @@
+#contenedor{
+    width: 900px;
+    margin: auto;
+    border: 3px solid black;
+    background-color: lightgray;
+}
+
+/* primer div */
+#div1{
+    position: relative;
+    width: 66.66%;
+    height: 150px;
+    background-color: lightblue;
+}
+
+/* segundo div */
+#div2{
+    position: relative;
+    width: 33.33%;
+    height: 150px;
+    background-color: lightgreen;
+}
+
+/* tercer div */
+#div3{
+    position: relative;
+    width: 33.33%;
+    height: 150px;
+    left: 66.66%;
+    top: -150px;
+    background-color: lightcoral;
+}
+
+/* cuarto div */
+#div4{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    left: 33.33%;
+    background-color: khaki;
+}

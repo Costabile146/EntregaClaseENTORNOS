@@ -1,0 +1,47 @@
+#contenedor{
+    background-color: lightblue;
+    border: 3px solid black;
+}
+
+/* menú fijo a la izquierda */
+#menu{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background-color: lightgreen;
+    padding: 10px;
+}
+
+/* anuncios a la derecha */
+#anuncios{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 200px;
+    height: 300px;
+    background-color: pink;
+    padding: 10px;
+}
+
+/* contenido central */
+#contenido1{
+    position: absolute;
+    left: 220px;
+    top: 20px;
+    width: 500px;
+    height: 200px;
+    background-color: lightyellow;
+    padding: 10px;
+}
+
+#contenido2{
+    position: absolute;
+    left: 220px;
+    top: 250px;
+    width: 500px;
+    height: 200px;
+    background-color: orange;
+    padding: 10px;
+}

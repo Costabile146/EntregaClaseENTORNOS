@@ -1,0 +1,42 @@
+#contenedor{
+    border:3px solid red;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    padding:20px;
+}
+
+.fila{
+    border:2px solid green;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    align-items:center;
+    padding:20px;
+    gap:20px;
+}
+
+.caja{
+    border:2px solid blue;
+    padding:10px 20px;
+    text-align:center;
+}
+
+/* tamaños especiales */
+.grande{
+    padding:30px 40px;
+}
+
+/* reglas pedidas */
+
+.uno{
+    flex:0 0 auto;
+}
+
+.dos{
+    flex:1 1 auto;
+}
+
+.tres{
+    flex:2 1 auto;
+}

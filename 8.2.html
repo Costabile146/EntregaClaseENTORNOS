@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 8.1.2 - Costabile</title>
+  <style>
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Clearfix */
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* ---- CABECERA ---- */
+    header {
+      background-color: #7ba7d4;
+      text-align: center;
+      padding: 20px;
+      font-size: 1.2rem;
+    }
+
+    /* ---- ZONA CENTRAL ---- */
+    .zona-central {
+      background-color: #a8c8e8;
+      padding: 10px;
+    }
+
+    /* Menú lateral izquierdo */
+    .menu {
+      float: left;
+      width: 15%;
+      background-color: #7ba7d4;
+      padding: 10px;
+      text-align: center;
+      min-height: 150px;
+    }
+
+    /* Zona artículos */
+    .articulos {
+      float: left;
+      width: 85%;
+      padding-left: 10px;
+    }
+
+    /* Cada artículo: 3 columnas en escritorio */
+    .articulo {
+      float: left;
+      width: 30%;
+      margin-right: 5%;
+      background-color: #c8d8e8;
+      padding: 10px;
+      text-align: center;
+      min-height: 150px;
+    }
+
+    .articulo:last-child {
+      margin-right: 0;
+    }
+
+    /* ---- PIE ---- */
+    footer {
+      background-color: #7ba7d4;
+      text-align: center;
+      padding: 20px;
+      clear: both;
+    }
+
+    /* ---- TABLETA (max 768px) ---- */
+    @media (max-width: 768px) {
+
+      .menu {
+        float: none;
+        width: 100%;
+        min-height: auto;
+        margin-bottom: 10px;
+      }
+
+      .articulos {
+        float: none;
+        width: 100%;
+        padding-left: 0;
+      }
+
+      .articulo {
+        width: 47%;
+        margin-right: 6%;
+      }
+
+      .articulo:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
+
+    /* ---- MOVIL (max 480px) ---- */
+    @media (max-width: 480px) {
+
+      .articulo {
+        float: none;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>8.1.2</header>
+
+  <div class="zona-central clearfix">
+
+    <div class="menu">
+      <p>NOTICIAS</p>
+    </div>
+
+    <div class="articulos clearfix">
+      <div class="articulo"><p>Acusan a Valve de ser un casino</p></div>
+      <div class="articulo"><p>El Gobierno Estadounidense acusa a Valve por Loot Boxes</p></div>
+      <div class="articulo"><p>Valve recurrirá ante la demanda del gobierno Estadounidense</p></div>
+    </div>
+
+  </div>
+
+  <footer>NUEVA CAJA DEL COUNTER 12/3/2026!!!!!!!!!!!!!!!</footer>
+
+</body>
+</html>

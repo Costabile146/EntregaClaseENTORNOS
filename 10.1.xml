@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dni>
+    <numero>12345678Z</numero>
+    <nombre>Oscar Andre</nombre>
+    <apellidos>Cebrian Bellido</apellidos>
+    <fecha_nacimiento>25-11-2002</fecha_nacimiento>
+    <fecha_expedicion>25-12-2021</fecha_expedicion>
+    <fecha_caducidad>25-12-2026</fecha_caducidad>
+    <sexo>M</sexo>
+    <nacionalidad>ESP</nacionalidad>
+</dni>
